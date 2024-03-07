@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+      src="https://kit.fontawesome.com/55174c58a9.js"
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+  <title>Shopping List</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/images/notepad.png" alt="notepad" />
+      <h1 id="app-title" class="page-title">Shopping List</h1>
+    </header>
+    <div class="message-container"></div>
+
+    <form id="shopping-form">
+      <div class="form-control">
+        <input type="text" class="form-input" id="shopping-input" name="shopping" placeholder="Enter item" />
+      </div>
+      <div class="form-control">
+        <button type="submit" id="add" class="btn btn-primary">
+          <i class="fa-solid fa-plus"></i> Add
+        </button>
+      </div>
+    </form>
+
+    <!-- <div class="filter">
+      <input type="text" class="shopping-filter" id="filter-search" placeholder=""/>
+    </div> -->
+
+    <ul id="shopping-list" class="items">
+    </ul>
+
+    <button id="clear-list" class=" btn btn-clear">Clear All</button>
+
+  </div> <!--end of container-->
+
+  <script src="/app.js"></script>
+</body>
+</html>
